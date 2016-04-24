@@ -1,0 +1,132 @@
+---
+layout: main
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 left-list">
+        <div class="element first">
+          <div class="title-element">
+            1ST SEMESTER
+          </div>
+          <div class="des-element">
+            Yo Fresh Bee!
+          </div>
+        </div>
+        <div class="element second">
+          <div class="title-element">
+            1ST SEMESTER
+          </div>
+          <div class="des-element">
+            Yo Fresh Bee!
+          </div>
+        </div>
+        <div class="element third">
+          <div class="title-element">
+            2ND SEMESTER
+          </div>
+          <div class="des-element">
+            Yo Fresh Bee!
+          </div>
+        </div>
+        <div class="element fourth">
+          <div class="title-element">
+            1ST SEMESTER
+          </div>
+          <div class="des-element">
+            Yo Fresh Bee!
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="title">
+          {{site.title}}
+        </div>
+        <div class="tagline">
+        {{site.description}}
+        </div>
+        <div class="logo-image">
+          <center>
+          <img class="img-responsive logo" src="/assets/logo.jpg" alt="" />
+        </center>
+        </div>
+      </div>
+      <div class="col-md-4 right-list">
+        <div class="element fifth">
+          <div class="title-element">
+            1ST SEMESTER
+          </div>
+          <div class="des-element sixth">
+            Yo Fresh Bee!
+          </div>
+        </div>
+        <div class="element sixth">
+          <div class="title-element ">
+            2ND SEMESTER
+          </div>
+          <div class="des-element">
+            Yo Fresh Bee!
+          </div>
+        </div>
+        <div class="element seventh">
+          <div class="title-element">
+            1ST SEMESTER
+          </div>
+          <div class="des-element">
+            Yo Fresh Bee!
+          </div>
+        </div>
+        <div class="element eighth">
+          <div class="title-element">
+            1ST SEMESTER
+          </div>
+          <div class="des-element">
+            Yo Fresh Bee!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="col-md-6 col-md-offset-3">
+      <input id="search" name="search" placeholder="Start typing here" type="text" data-list=".list"></input>
+
+    </div>
+
+  </div>
+
+  <div class="container subject-list">
+
+
+      <div class="list">
+
+</div>
+
+  </div>
+</section>
+<script>
+  $(document).ready(function(){
+    var arr = ['Data Structures', 'Algorithms', 'Mathematics 1', 'C++', 'Computer Science','Data Structures', 'Algorithms','Data Structures', 'Algorithms','Data Structures', 'Algorithms', 'Mathematics 1', 'C++'];
+    var html = "";
+    arr.forEach(function(val){
+      html+='<span class="subjects">'+ val +'</span>';
+    });
+
+    $('.list').html(html);
+
+
+    $('#search').hideseek({
+      highlight: true,
+      nodata: 'No results found',
+
+
+    });
+
+
+
+
+  });
+</script>
