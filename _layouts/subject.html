@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  <section id="header">
+    <div class="container pages-section">
+
+      <div class="row">
+        <div class="col-md-2 left-sidebar">
+
+          <div class="left-sidebar-page">
+            <div class="page-default-logo">
+              <center> <img src="/assets/logo.png" class="img-responsive" alt="" />
+            </div>
+            <div class="page-default-title">
+              <center> <span style="font-size:24px !important;">C</span><span style="font-size:17px !important;">AMPWIK</span><span style="font-size:24px !important;">I</span>
+            </div>
+            <center>
+              <br>
+              <br>
+              <input id="search" name="search" placeholder="Start typing here" type="text" data-list=".list"></input>
+
+
+              <div class="left-sidebar-page-list list">
+                {% for topics in page.topics %}
+                <span class="topics"><a href="{{topics.link}}">{{topics.title}}</a></span>
+                <br> {% endfor %}
+              </div>
+          </div>
+          </center>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+
+          </div>
+          <div class="row header-box-page">
+            <div class="">
+              <div class="col-md-4 header-box-page-title">
+                {{page.title}}
+              </div>
+              <div class="col-md-8">
+
+              </div>
+            </div>
+
+          </div>
+          {{content}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include footer0.html %}
+
+</body>
+
+</html>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#search').hideseek({
+      highlight: true,
+      nodata: 'No results found',
+
+
+
+    });
+  });
+</script>
