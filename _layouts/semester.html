@@ -25,12 +25,12 @@
 
               <div class="left-sidebar-page-list list">
                 {% for post in site.posts %}
-                {% if post.layout == "chapter" %}
-                {%  if post.subject == page.title %}
-                <span class="topics"><a href="{{post.url}}">{{post.title}}</a></span>
+                {% if post.layout == "subject"  %}
+                {%  if post.semester == page.semester %}
+                <span class="topics"><a href="{{post.url}}">{{post.title}}</a></span><br>
                 {% endif %}
                 {% endif %}
-                <br> {% endfor %}
+                 {% endfor %}
               </div>
           </div>
           </center>
@@ -45,7 +45,7 @@
                 {{page.title}}
               </div>
               <div class="col-md-8">
-                SUBJECTS
+               SEMESTER
               </div>
             </div>
 

@@ -3,11 +3,12 @@
 
 {% capture subjects %}
 [
-{% for subject in site.subjects %}
+{% for post in site.posts %}
+{% if post.subjectMain %}
 {
 "title"    : "{{ subject.title}}",
 "link"      : "{{subject.link}}"
-} {% if forloop.last %}{% else %},{% endif %}
+} {% endif %}{% if forloop.last %}{% else %},{% endif %}
 {% endfor %}
 ]
 {% endcapture %}
