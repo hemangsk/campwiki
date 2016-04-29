@@ -24,7 +24,7 @@
 
 
               <div class="left-sidebar-page-list list">
-                {% for topics in page.topics %}
+                {% for topics in page.chapters %}
                 <span class="topics"><a href="{{topics.link}}">{{topics.title}}</a></span>
                 <br> {% endfor %}
               </div>
@@ -46,7 +46,10 @@
             </div>
 
           </div>
-          {{content}}
+          <div class="subject-content">
+            {{content}}
+          </div>
+
         </div>
       </div>
     </div>

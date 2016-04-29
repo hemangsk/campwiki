@@ -1,7 +1,7 @@
 ---
-layout: subject
-title: About
-permalink: /about/
+layout: topics
+title: Trees
+permalink: /data-structures/topics/trees
 topics: [{"title" :"trees", "link":"/about/topics/trees"}, {"title":"graphs", "link":"/about/topics/graphs"}]
 ---
 
