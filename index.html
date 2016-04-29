@@ -48,7 +48,7 @@ layout: main
         </div>
         <div class="logo-image">
           <center>
-          <img class="img-responsive logo" src="/assets/logo.png" alt="" />
+          <img class="img-responsive logo" src="{{"/assets/logo.png"| prepend: site.baseurl }}" alt="" />
         </center>
         </div>
       </div>
@@ -107,4 +107,4 @@ layout: main
 </center>
   </div>
 </section>
-<script src="/js/script.js"></script>
+<script src="{{"/js/script.js"| prepend: site.baseurl }}"></script>
