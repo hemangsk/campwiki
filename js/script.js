@@ -13,9 +13,13 @@
 {% endfor %}
 ]
 {% endcapture %}
+
+{% capture toPrepend %}
+["{{site.baseurl}}"]
+{% endcapture %}
 var subjects = {{subjects | strip_newlines}}
-
-
+var toPrepend = {{toPrepend | strip_newlines}};
+console.log(toPrepend);
 $(document).ready(function(){
 
 
@@ -25,7 +29,7 @@ $(document).ready(function(){
   arrsubj.forEach(function(val){
     console.log(val.link);
     if(val.link){
-      html+='<span class="subjects"><a href="'+val.link+'">'+ val.title +'</a></span>&nbsp;&nbsp;&nbsp;';
+      html+='<span class="subjects"><a href="'+ toPrepend[0] + '/' + val.link+'">'+ val.title +'</a></span>&nbsp;&nbsp;&nbsp;';
 
     }
     else{
