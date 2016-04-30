@@ -4,11 +4,12 @@
 {% capture subjects %}
 [
 {% for post in site.posts %}
-{% if post.subjectMain %}
+{% if post.layout == "subject" %}
 {
-"title"    : "{{ subject.title}}",
-"link"      : "{{subject.link}}"
-} {% endif %}{% if forloop.last %}{% else %},{% endif %}
+"title"    : "{{ post.title}}",
+"link"      : "{{post.url}}"
+} {% if forloop.last %}{% else %},{% endif %}
+{% endif %}
 {% endfor %}
 ]
 {% endcapture %}
