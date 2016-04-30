@@ -25,11 +25,9 @@
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
   <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
-{% if page.image %}
-  <meta content="https://farm2.staticflickr.com/1446/26122840803_76654d1914_o.png" property="og:image">
-{% else %}
-  <meta content="https://farm2.staticflickr.com/1446/26122840803_76654d1914_o.png" property="og:image">
-{% endif %}
+
+  <meta property="og:image" content="https://farm2.staticflickr.com/1446/26122840803_76654d1914_o.png">
+
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
   <meta content="{{ category }}" property="article:section">
