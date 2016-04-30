@@ -25,7 +25,7 @@
 
               <div class="left-sidebar-page-list list">
                 {% for subtopics in page.subtopics %}
-                <span class="topics"><a href="{{subtopics.link}}">{{subtopics.title}}</a></span>
+                <span class="topics"><a href="{{subtopics.link | prepend: page.url |prepend: site.baseurl}}">{{subtopics.title}}</a></span>
                 <br> {% endfor %}
               </div>
           </div>

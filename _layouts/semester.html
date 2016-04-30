@@ -27,7 +27,7 @@
                 {% for post in site.posts %}
                 {% if post.layout == "subject"  %}
                 {%  if post.semester == page.semester %}
-                <span class="topics"><a href="{{post.url}}">{{post.title}}</a></span><br>
+                <span class="topics"><a href="{{post.url| prepend: site.baseurl }}">{{post.title}}</a></span><br>
                 {% endif %}
                 {% endif %}
                  {% endfor %}
