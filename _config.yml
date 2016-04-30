@@ -9,14 +9,10 @@
 title: CAMPWIKI
 email: your-email@domain.com
 description: UNIVERSITY'S NOTES WIKIPEDIA
-baseurl: "/Campwiki" # the subpath of your site, e.g. /blog
-url: "http://hemangsk.github.io/Campwiki" # the base hostname & protocol for your site
+baseurl: "/campwiki" # the subpath of your site, e.g. /blog
+url: "http://hemangsk.github.io/campwiki" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-subjects: [{   'title' : 'Data Structures',
-'link': 'data-structures',
-'topics': ['Trees', 'Graphs']
-}]
 
 # Build settings
 markdown: kramdown
