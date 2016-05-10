@@ -5,7 +5,7 @@
 
 ![alt-tag](https://farm2.staticflickr.com/1481/26659374551_8e52dc9c20_o.png)
 
-![alt-tag](https://farm8.staticflickr.com/7011/26333387703_c9a624af65_o.png)
+![alt-tag](https://farm8.staticflickr.com/7531/26904383606_340b83202c_o.png)
 ![alt-tag](https://farm2.staticflickr.com/1578/26121828943_efd5bf106e_o.png)
 
 The wiki's structure is quite simple and its divided into four levels,
