@@ -1,7 +1,7 @@
 #C A M P W I K I
 ![alt tag](https://farm2.staticflickr.com/1482/26119070214_3ae105de28_o.png)
 
-[![Build Status](https://travis-ci.org/hemangsk/campwiki.svg?branch=master)](https://travis-ci.org/hemangsk/campwiki)
+[![Build Status](https://travis-ci.org/hemangsk/campwiki.svg?branch=gh-pages)](https://travis-ci.org/hemangsk/campwiki)
 
 ![alt-tag](https://farm2.staticflickr.com/1481/26659374551_8e52dc9c20_o.png)
 
