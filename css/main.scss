@@ -2,7 +2,61 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+.fa-heart{
+  color:crimson !important;
+}
+a> div{
+  text-decoration: none!important;
+}
+a:hover{
+  text-decoration: none !important;
+}
+a > div:hover{
+  text-decoration: none !important;
+}
+ a > div > span {
+    color: #1a237e !important;
+    text-decoration: none !important;
 
+    &:visited {
+        color: darken(#1a237e, 15%);
+    }
+
+    &:hover {
+      text-decoration: none !important;
+        color: black !important;
+        border-bottom: 1px dotted black ;
+    }
+
+    &.page-link{
+      &:hover {
+          color: #1a237e;
+          border-bottom: 1px dotted black !important ;
+      }
+    }
+    &.postLink{
+      color: black !important;
+      &:hover {
+
+          border-bottom: 1px dotted black ;
+      }
+
+      &:visited {
+          color: "#1a237e" !important;
+      }
+    }
+    &.title-element{
+      color: #1a237e !important;
+      &:hover {
+        text-decoration: none !important;
+          border-bottom: 1px dotted black !important ;
+      }
+
+      &:visited {
+          color: "#1a237e" !important;
+      }
+    }
+}
 .title{
   text-align: center;
 font-family: "PT Sans";
@@ -20,7 +74,7 @@ padding-top: 1.5em;
     text-align: center;
     font-family: "Lato";
     text-transform: uppercase;
-    color: crimson;
+    color: #1a237e;
 }
 .site-footer-title{
   letter-spacing: 2px;
