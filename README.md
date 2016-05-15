@@ -110,6 +110,7 @@ That's all folks.
 ####It'd be really cool if you,<br>
 1.  Create some new feature and would like to integrate in CampWiki. Pull requests are most invited.
 2.  Open issues if you find bugs.
+3.  Just so you know, the license is MIT.
 
 >Its' all about being community driven.  :bus: :bus: :dash:
 
